@@ -1,0 +1,26 @@
+{
+  "name": "rnwpoc-lib",
+  "description": "RNW Library for Android and Web components",
+  "version": "0.1.0",
+  "scripts": {
+    "prepack": "tsc"
+  },
+  "author": {
+    "email": "hempat02@gmail.com",
+    "name": "Hemal Patil"
+  },
+  "main": "./index.js",
+  "exports": "./index.js",
+  "dependencies": {
+    "react-native-web": "^0.19.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.3",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
