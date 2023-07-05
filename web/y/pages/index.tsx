@@ -5,6 +5,7 @@ const HomePage = () => {
     <>
       <div>rnwpoc-web-y</div>
       <Button
+        label="This is an RNW button"
         onClick={() => {
           console.log('hello from react-native-web')
         }}
