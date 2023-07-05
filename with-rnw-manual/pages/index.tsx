@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native-web'
 
 const styles = StyleSheet.create({
   container: {
@@ -24,7 +24,7 @@ export default function App(props) {
   return (
     <View style={styles.container}>
       <Text accessibilityRole="header" style={styles.text}>
-        Hello world rnw-manual
+        Hello world rnw-manual bye bye
       </Text>
     </View>
   )
