@@ -3,14 +3,14 @@
   "description": "RNW Library for Android and Web components",
   "version": "0.1.0",
   "scripts": {
-    "prepack": "tsc"
+    "prepack": "rm -rf ./dist && tsc"
   },
   "author": {
     "email": "hempat02@gmail.com",
     "name": "Hemal Patil"
   },
-  "main": "./index.js",
-  "exports": "./index.js",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "dependencies": {
     "react-native-web": "^0.19.6"
