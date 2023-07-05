@@ -9,7 +9,8 @@
   "dependencies": {
     "next": "^13.4.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rnwpoc-lib": "file:/Users/hemal/code/dehaat/rnwpoc-lib-0.1.0.tgz"
   },
   "devDependencies": {
     "@types/node": "^20.3.3",

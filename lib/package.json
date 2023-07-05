@@ -11,6 +11,7 @@
   },
   "main": "./index.js",
   "exports": "./index.js",
+  "types": "./dist/index.d.ts",
   "dependencies": {
     "react-native-web": "^0.19.6"
   },
