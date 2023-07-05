@@ -1,0 +1,15 @@
+{
+  "name": "react-platform-agnostic",
+  "version": "0.1.0",
+  "description": "Platform agnostic react components for android and web",
+  "author": {
+    "name": "Hemal Patil",
+    "email": "hempat02@gmail.com",
+    "url": "https://github.com/HemalPatil"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native-web": "^0.18.9"
+  }
+}
