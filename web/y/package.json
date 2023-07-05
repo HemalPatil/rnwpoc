@@ -1,0 +1,24 @@
+{
+  "name": "rnwpoc-web-y",
+  "description": "NextJS 13 project with RNW",
+  "version": "0.1.0",
+  "author": {
+    "email": "hempat02@gmail.com",
+    "name": "Hemal Patil"
+  },
+  "dependencies": {
+    "next": "^13.4.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.3",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build"
+  }
+}
