@@ -1,6 +1,27 @@
 # Platform agnostic react components for Android and Web
 This project is divided into subprojects as follows
 
+# Create and test lib package
+```
+cd ./lib
+npm install
+npm pack
+mv rnwpoc-lib-0.1.0.tgz /some/path
+```
+Change the dependency for `rnwpoc-lib` in `./web/y/package.json` to use the correct file path to the package tarball that was created e g.
+```
+"dependencies": {
+  ...,
+  "rnwpoc-lib": "file:/some/path/rnwpoc-lib-0.1.0.tgz"
+}
+```
+Test the package:
+```
+cd ./web/y
+npm install
+npm run build #(will fail)
+```
+
 ## without-rnw
 Setup using NextJS' official `create-next-app` utility. It uses the newer `App Router`. Does not use `rnw`.
 
