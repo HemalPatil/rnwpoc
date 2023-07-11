@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleSheet, Text, View } from 'react-native'
 
 const styles = StyleSheet.create({
   container: {
@@ -36,6 +36,10 @@ export default function App(props) {
           Subheader
         </Text>
       </View>
+
+      <Pressable accessibilityRole="button" onPress={() => {
+        console.log('hello rnw')
+      }}><Text>Button</Text></Pressable>
     </View>
   )
 }

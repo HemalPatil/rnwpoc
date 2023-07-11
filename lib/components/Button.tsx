@@ -1,4 +1,4 @@
-import { Pressable, Text } from 'react-native-web'
+import { Pressable, Text } from 'react-native'
 
 export interface ButtonProps {
   label: string

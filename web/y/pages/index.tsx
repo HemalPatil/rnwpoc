@@ -10,6 +10,13 @@ const HomePage = () => {
           console.log('hello from react-native-web')
         }}
       />
+      <button
+        onClick={() => {
+          console.log('hello from html5')
+        }}
+      >
+        This is an HTML5 button
+      </button>
     </>
   )
 }

@@ -10,6 +10,7 @@
     "next": "^13.4.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-native": "npm:react-native-web@^0.19.6",
     "rnwpoc-lib": "file:/Users/hemal/code/dehaat/rnwpoc-lib-0.1.0.tgz"
   },
   "devDependencies": {
@@ -19,7 +20,8 @@
     "typescript": "^5.1.6"
   },
   "scripts": {
+    "build": "next build",
     "dev": "next dev",
-    "build": "next build"
+    "start": "next start"
   }
 }
