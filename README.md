@@ -4,6 +4,9 @@ This project is divided into subprojects as follows
 # Update 2023-07-12
 1. Supply custom types for `react-native` in the lib that are actually for `react-native-web`
 2. Add `react-native-web` dependency under the alias `react-native` in NextJS so that all components are resolved from `react-native-web`
+### Cons
+1. Bundle size for home page is still 150kb instead of the normal 75kb
+2. No alternatives available for SVG components
 
 # Create and test lib package
 ```
