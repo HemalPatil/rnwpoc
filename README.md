@@ -1,6 +1,10 @@
 # Platform agnostic react components for Android and Web
 This project is divided into subprojects as follows
 
+# Update 2023-07-12
+1. Supply custom types for `react-native` in the lib that are actually for `react-native-web`
+2. Add `react-native-web` dependency under the alias `react-native` in NextJS so that all components are resolved from `react-native-web`
+
 # Create and test lib package
 ```
 cd ./lib
