@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomePage /> Should match snapshot 1`] = `
+<div>
+  <div>
+    rnwpoc-web-y
+  </div>
+  <div
+    class="css-view-175oi2r r-cursor-1loqt21 r-touchAction-1otgn73"
+    tabindex="0"
+  >
+    <div
+      class="css-text-146c3p1"
+      dir="auto"
+    >
+      This is an RNW button
+    </div>
+  </div>
+  <button>
+    This is an HTML5 button
+  </button>
+</div>
+`;
