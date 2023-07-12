@@ -2,7 +2,7 @@ import { Pressable, Text } from 'react-native'
 
 import { BUTTON_STYLES } from '../styles/Button'
 
-export interface ButtonProps {
+export type ButtonProps = {
   label: string
   onClick: VoidFunction
 }

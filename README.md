@@ -2,11 +2,15 @@
 This project is divided into subprojects as follows
 
 # Update 2023-07-12
-1. Supply custom types for `react-native` in the lib that are actually for `react-native-web`
-2. Add `react-native-web` dependency under the alias `react-native` in NextJS so that all components are resolved from `react-native-web`
+1. Supply custom types for `react-native` in the lib that are actually for `react-native-web`.
+2. Add `react-native-web` dependency under the alias `react-native` in NextJS so that all components are resolved from `react-native-web`.
+3. CSS styles can be added to array so duplicates can be avoided but we'll have to be careful to create almost tailwind like classes and possibly rework some existing styles in the RN app project.
+4. No change in the bundle size for RN app when integrated there.
 ### Cons
-1. Bundle size for home page is still 150kb instead of the normal 75kb
-2. No alternatives available for SVG components
+1. Bundle size for web home page is still 150kb instead of the normal 75kb.
+2. No alternatives available for SVG components.
+3. &lt;Paragraph /&gt; is rendered as inline on web and block element in android. Could just be one of the many inconsistencies that we'll have to figure out.
+4. Everything is rendered as a div in web. We'll take a heavy penalty on accessibility and lose out on the capabilities that native HTML5 elements provide.
 
 # Create and test lib package
 ```

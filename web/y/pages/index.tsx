@@ -1,4 +1,4 @@
-import { Button } from 'rnwpoc-lib'
+import { Button, Paragraph } from 'rnwpoc-lib'
 
 const HomePage = () => {
   return (
@@ -10,6 +10,7 @@ const HomePage = () => {
           console.log('hello from react-native-web')
         }}
       />
+      <Paragraph>This is a Paragraph</Paragraph>
       <button
         onClick={() => {
           console.log('hello from html5')
