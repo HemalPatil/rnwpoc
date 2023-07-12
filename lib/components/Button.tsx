@@ -1,6 +1,6 @@
 import { Pressable, Text } from 'react-native'
 
-import { BUTTON_STYLES } from '../styles/Button'
+import { BUTTON_STYLES } from '../styles/Button.js'
 
 export type ButtonProps = {
   label: string

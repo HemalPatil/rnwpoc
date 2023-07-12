@@ -6,7 +6,7 @@ exports[`<HomePage /> Should match snapshot 1`] = `
     rnwpoc-web-y
   </div>
   <div
-    class="css-view-175oi2r r-cursor-1loqt21 r-touchAction-1otgn73"
+    class="css-view-175oi2r r-cursor-1loqt21 r-touchAction-1otgn73 r-backgroundColor-svk53m"
     tabindex="0"
   >
     <div
@@ -15,6 +15,12 @@ exports[`<HomePage /> Should match snapshot 1`] = `
     >
       This is an RNW button
     </div>
+  </div>
+  <div
+    class="css-text-146c3p1 r-fontFamily-102yv63 r-fontSize-adyw6z r-fontWeight-1kfrs79 r-lineHeight-vrz42v r-backgroundColor-svk53m"
+    dir="auto"
+  >
+    This is a Paragraph
   </div>
   <button>
     This is an HTML5 button

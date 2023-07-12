@@ -1,6 +1,6 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native'
 
-import { COLORS } from "./colors";
+import { COLORS } from './colors.js'
 
 export const BUTTON_STYLES = StyleSheet.create({
   primaryButton: {

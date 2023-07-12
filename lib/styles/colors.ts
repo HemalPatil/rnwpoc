@@ -96,9 +96,9 @@ export const COLORS = {
   white: '#FFFFFF',
   black: '#000000',
   orange: '#FF754A',
-};
+}
 
-export const FONT_FAMILY_REGULAR = 'NotoSans-Regular';
-export const FONT_FAMILY_MEDIUM = 'NotoSans-Medium';
-export const FONT_FAMILY_SEMIBOLD = 'NotoSans-SemiBold';
-export const EM = 16;
+export const FONT_FAMILY_REGULAR = 'NotoSans-Regular'
+export const FONT_FAMILY_MEDIUM = 'NotoSans-Medium'
+export const FONT_FAMILY_SEMIBOLD = 'NotoSans-SemiBold'
+export const EM = 16

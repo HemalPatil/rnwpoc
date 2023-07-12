@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-import { COLORS, FONT_FAMILY_SEMIBOLD } from './colors'
+import { FONT_FAMILY_SEMIBOLD } from './colors.js'
 
 export const PARAGRAPH_STYLES = StyleSheet.create({
   big: {

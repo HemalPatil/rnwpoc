@@ -1,2 +1,2 @@
-export { Button, ButtonProps } from './Button'
-export { Paragraph, ParagraphProps } from './Paragraph'
+export { Button, ButtonProps } from './Button.js'
+export { Paragraph, ParagraphProps } from './Paragraph.js'

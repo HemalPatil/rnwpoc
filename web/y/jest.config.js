@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const nextJest = require('next/jest')
 
 const createJestConfig = nextJest({
@@ -6,10 +5,20 @@ const createJestConfig = nextJest({
   dir: './',
 })
 
-// Add any custom config to be passed to Jest
 const customJestConfig = {
   testEnvironment: 'jest-environment-jsdom',
 }
 
-// createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
-module.exports = createJestConfig(customJestConfig)
+const overrideNextJestConfig = async () => {
+  // Override the transformIgnorePatterns in the config created by NextJS
+  const nextJestConfig = await createJestConfig(customJestConfig)()
+  nextJestConfig.transformIgnorePatterns = [
+    'node_modules/(?!(rnwpoc-lib)/)',
+    ...nextJestConfig.transformIgnorePatterns.filter(
+      (c) => !c.includes('node_modules')
+    ),
+  ]
+  return nextJestConfig
+}
+
+module.exports = overrideNextJestConfig

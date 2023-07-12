@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react'
 import { Text } from 'react-native'
-import { PARAGRAPH_STYLES } from '../styles/Paragraph'
-import { BUTTON_STYLES } from '../styles/Button'
+import { PARAGRAPH_STYLES } from '../styles/Paragraph.js'
+import { BUTTON_STYLES } from '../styles/Button.js'
 
 export type ParagraphProps = PropsWithChildren<{}>
 
