@@ -11,6 +11,7 @@
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native-web": "^0.18.9"
+    "react-native": "npm:react-native-web@^0.18.9",
+    "rnwpoc-lib": "file:/Users/hemal/code/dehaat/rnwpoc-lib-0.1.0.tgz"
   }
 }

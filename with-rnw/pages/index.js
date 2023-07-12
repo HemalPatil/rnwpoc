@@ -1,45 +1,34 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native'
+// import { Button, Paragraph } from 'rnwpoc-lib'
+import { Pressable, Text } from 'react-native'
+import { PARAGRAPH_STYLES } from '../styles/Paragraph'
+import { BUTTON_STYLES } from '../styles/Button'
 
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    flexGrow: 1,
-    justifyContent: 'center',
-  },
-  link: {
-    color: 'blue',
-  },
-  textContainer: {
-    alignItems: 'center',
-    marginTop: 16,
-  },
-  text: {
-    alignItems: 'center',
-    fontSize: 24,
-    marginBottom: 24,
-  },
-})
-
-export default function App(props) {
+const HomePage = () => {
   return (
-    <View style={styles.container}>
-      <Text accessibilityRole="header" style={styles.text}>
-        React Native for Web & Next.js
-      </Text>
-
-      <Text style={styles.link} accessibilityRole="link" href={`/alternate`}>
-        A universal link
-      </Text>
-
-      <View style={styles.textContainer}>
-        <Text accessibilityRole="header" aria-level="2" style={styles.text}>
-          Subheader
-        </Text>
-      </View>
-
-      <Pressable accessibilityRole="button" onPress={() => {
-        console.log('hello rnw')
-      }}><Text>Button</Text></Pressable>
-    </View>
+    <>
+      <div>rnwpoc-web-y</div>
+      <Pressable onPress={() => {
+          console.log('hello from react-native-web')
+        }} style={BUTTON_STYLES.primaryButton}>
+        <Text>This is an RNW button</Text>
+      </Pressable>
+      {/* <Button
+        label="This is an RNW button"
+        onClick={() => {
+          console.log('hello from react-native-web')
+        }}
+      /> */}
+      <Text style={[PARAGRAPH_STYLES.big, BUTTON_STYLES.primaryButton]}>This is a Paragraph</Text>
+      {/* <Paragraph>This is a Paragraph</Paragraph> */}
+      <button
+        onClick={() => {
+          console.log('hello from html5')
+        }}
+      >
+        This is an HTML5 button
+      </button>
+    </>
   )
 }
+
+export default HomePage
