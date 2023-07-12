@@ -1,5 +1,7 @@
 import { Pressable, Text } from 'react-native'
 
+import { BUTTON_STYLES } from '../styles/Button'
+
 export interface ButtonProps {
   label: string
   onClick: VoidFunction
@@ -7,7 +9,7 @@ export interface ButtonProps {
 
 export function Button({ label, onClick }: ButtonProps) {
   return (
-    <Pressable onPress={onClick}>
+    <Pressable onPress={onClick} style={BUTTON_STYLES.primaryButton}>
       <Text>{label}</Text>
     </Pressable>
   )
