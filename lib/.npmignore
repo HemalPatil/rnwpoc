@@ -2,4 +2,5 @@ node_modules
 *.ts
 *.tsx
 !*.d.ts
-tsconfig.json
+tsconfig*.json
+*.tgz

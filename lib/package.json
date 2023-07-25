@@ -3,17 +3,15 @@
   "description": "RNW Library for Android and Web components",
   "version": "0.1.0",
   "scripts": {
-    "prepack": "rm -rf ./dist && tsc"
+    "prepack": "rm -rf ./dist && mkdir dist && tsc --project tsconfig.cjs.json && tsc --project tsconfig.esm.json && tsc --project tsconfig.types.json"
   },
   "author": {
     "email": "hempat02@gmail.com",
     "name": "Hemal Patil"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "type": "module",
-  "exports": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
   "devDependencies": {
     "@types/node": "^20.3.3",
     "@types/react": "^18.2.14",
@@ -21,7 +19,6 @@
     "@types/react-native": "^0.72.2"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^17.0.2 || ^18.2.0"
+    "react": "^17.0.2 || ^18.2.0"
   }
 }
